@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HONG'S FAMILLY</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 0;
+      }
+      a {
+       color:black;
+       text-decoration: none;
+      }
+      h1  {
+        font-size:60px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        padding: 50px;
+        margin: 0;
+      }
+      #grid ul {
+        font-size: 25px;
+        list-style: none;
+        border-right: 1px solid gray;
+        width: 150px;
+        margin: 0;
+        padding: 60px;
+        background-color: pink;
+      }
+      #grid ul li{
+        padding: 5px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 350px 1fr;
+      }
+      #article {
+        padding-top: 40px;
+      }
+      @media(max-width:860px) {
+        #grid {
+          display: block;
+          text-align: center;
+        }
+        #grid ul {
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+        #article {
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">HONG'S FAMILLY</a></h1>
+    <div id="grid">
+      <ul>
+        <li><a href="1.html">홍인석</a></li>
+        <li><a href="2.html">고새롬</a></li>
+        <li><a href="3.html">홍사랑</a></li>
+      </ul>
+      <div id="article">
+        <h2>홍인석</h2>
+        홍인석이 키크다키크다
+      </div>
+    </div>
+  </body>
+</html>
